@@ -629,4 +629,81 @@ section {
 .image-caption .location {
     font-size: 0.9rem;
     color: var(--accent-color);
+}
+
+/* Language Progress Section */
+.language-progress {
+    background-color: var(--light-gray);
+    padding: 8rem 2rem;
+}
+
+.language-progress-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.progress-story {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.progress-story h3 {
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.progress-story p {
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    margin: 2rem 0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.progress-video {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+.progress-note {
+    background: var(--light-gray);
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-top: 2rem;
+}
+
+.progress-note p {
+    margin-bottom: 0.5rem;
+}
+
+.progress-note strong {
+    color: var(--accent-color);
+}
+
+.motivation-text {
+    font-style: italic;
+    color: var(--medium-gray);
+    border-left: 3px solid var(--accent-color);
+    padding-left: 1rem;
+    margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+    .language-progress {
+        padding: 4rem 1rem;
+    }
+
+    .progress-story {
+        padding: 1.5rem;
+    }
 } 
