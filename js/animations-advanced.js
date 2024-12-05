@@ -122,12 +122,24 @@ class TextReveal {
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
+                    // Añadir un pequeño retraso para que la animación sea más suave
+                    setTimeout(() => {
+                        entry.target.classList.add('visible');
+                    }, 100);
+                } else {
+                    // Remover la clase cuando el elemento no está visible
+                    entry.target.classList.remove('visible');
                 }
             });
-        }, { threshold: 0.1 });
+        }, { 
+            threshold: 0.2,
+            rootMargin: '0px'
+        });
         
-        document.querySelectorAll('.reveal-text').forEach(el => observer.observe(el));
+        // Solo aplicar el efecto a elementos que no están en la navegación
+        document.querySelectorAll('.reveal-text:not(.nav-links a):not(.language-selector button)').forEach(el => {
+            observer.observe(el);
+        });
     }
 }
 
