@@ -189,9 +189,13 @@
                        Este video muestra mi punto de partida, demostrando que con dedicación y práctica constante, 
                        se puede mejorar significativamente en un idioma.</p>
                     <div class="video-container">
-                        <video controls class="progress-video">
-                            <source src="images/video_frances_julio2023.mp4" type="video/mp4">
-                            Tu navegador no soporta el elemento de video.
+                        <video controls class="progress-video" preload="metadata">
+                            <source src="images/Video_hablando_frances_julio_2023.mp4" type="video/mp4">
+                            <source src="images/Video_hablando_frances_julio_2023.webm" type="video/webm">
+                            <p class="video-fallback">
+                                Tu navegador no soporta la reproducción de video.
+                                <a href="images/Video_hablando_frances_julio_2023.mp4" download>Descarga el video</a>
+                            </p>
                         </video>
                     </div>
                     <div class="progress-note">

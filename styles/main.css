@@ -667,12 +667,41 @@ section {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    background-color: #f0f0f0;
+    aspect-ratio: 16 / 9;
 }
 
 .progress-video {
     width: 100%;
+    height: 100%;
     display: block;
     border-radius: 10px;
+    object-fit: cover;
+}
+
+.video-fallback {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    padding: 1rem;
+}
+
+.video-fallback a {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--accent-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.video-fallback a:hover {
+    background-color: #cc0000;
 }
 
 .progress-note {
