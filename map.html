@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Trayectoria | Xabier Iribar</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/map.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+</head>
+<body class="map-page">
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <header class="header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo">XI</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="about.html">Sobre mí</a></li>
+                <li><a href="map.html" class="active">Mi Trayectoria</a></li>
+                <li><a href="index.html#contact">Contacto</a></li>
+            </ul>
+            <div class="language-selector">
+                <button data-lang="es" class="active">ES</button>
+                <button data-lang="eu">EU</button>
+                <button data-lang="en">EN</button>
+                <button data-lang="de">DE</button>
+                <button data-lang="fr">FR</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="map-main">
+        <section class="map-hero">
+            <div class="map-hero-content">
+                <span class="section-number">03</span>
+                <h1>Mi Trayectoria</h1>
+                <p class="map-intro">Explora los lugares que han marcado mi camino académico y profesional.</p>
+            </div>
+        </section>
+
+        <section class="map-content">
+            <div id="map"></div>
+            
+            <div class="locations-list">
+                <div class="location-card" data-coordinates="42.8459, -2.6867">
+                    <h3>Vitoria-Gasteiz</h3>
+                    <p class="location-type">Estudios Universitarios</p>
+                    <p class="location-description">Facultad de Letras, UPV/EHU. Aquí cursé mi grado en Geografía, desarrollando una sólida base académica y mi pasión por el análisis territorial.</p>
+                </div>
+
+                <div class="location-card" data-coordinates="49.2020, 16.6078">
+                    <h3>Brno</h3>
+                    <p class="location-type">Erasmus</p>
+                    <p class="location-description">Universidad Mendel de Brno, República Checa. Una experiencia transformadora que expandió mis horizontes culturales y académicos.</p>
+                </div>
+
+                <div class="location-card" data-coordinates="46.5380, 6.4987">
+                    <h3>Bremblens</h3>
+                    <p class="location-type">Experiencia Profesional</p>
+                    <p class="location-description">Marché Cuendet, Cantón de Vaud. Mi primera experiencia en Suiza, trabajando como voluntario en una granja de producción sin químicos.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Xabier Iribar. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="js/map.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/translations.js"></script>
+</body>
+</html> 
