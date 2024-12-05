@@ -8,23 +8,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body>
+<body class="custom-cursor">
     <header class="header">
         <nav class="nav-container">
-            <div class="logo">XI</div>
+            <div class="logo reveal-text">XI</div>
             <ul class="nav-links">
-                <li><a href="#home">Inicio</a></li>
-                <li><a href="about.html">Sobre mí</a></li>
-                <li><a href="#services">Servicios</a></li>
-                <li><a href="#newsletter">Newsletter</a></li>
-                <li><a href="#contact">Contacto</a></li>
+                <li><a href="#home" class="reveal-text">Inicio</a></li>
+                <li><a href="about.html" class="reveal-text">Sobre mí</a></li>
+                <li><a href="#services" class="reveal-text">Servicios</a></li>
+                <li><a href="#newsletter" class="reveal-text">Newsletter</a></li>
+                <li><a href="#contact" class="reveal-text">Contacto</a></li>
             </ul>
             <div class="language-selector">
-                <button data-lang="es" class="active">ES</button>
-                <button data-lang="eu">EU</button>
-                <button data-lang="en">EN</button>
-                <button data-lang="de">DE</button>
-                <button data-lang="fr">FR</button>
+                <button data-lang="es" class="active reveal-text">ES</button>
+                <button data-lang="eu" class="reveal-text">EU</button>
+                <button data-lang="en" class="reveal-text">EN</button>
+                <button data-lang="de" class="reveal-text">DE</button>
+                <button data-lang="fr" class="reveal-text">FR</button>
             </div>
         </nav>
     </header>
@@ -32,25 +32,28 @@
     <main>
         <section id="home" class="hero">
             <div class="hero-content">
-                <h1>Xabier Iribar</h1>
-                <p>Comunicación Internacional & Creación de Contenido</p>
+                <h1 class="reveal-text">Xabier Iribar</h1>
+                <p class="reveal-text">Comunicación Internacional & Creación de Contenido</p>
             </div>
         </section>
 
         <section id="services" class="services">
             <div class="section-header">
-                <h2>Servicios</h2>
+                <h2 class="reveal-text">Servicios</h2>
             </div>
             <div class="services-grid">
-                <div class="service-card">
+                <div class="service-card scroll-animate">
+                    <i class="fas fa-globe"></i>
                     <h3>Comunicación Internacional</h3>
                     <p>Estrategias multilingües y adaptación cultural</p>
                 </div>
-                <div class="service-card">
+                <div class="service-card scroll-animate">
+                    <i class="fas fa-video"></i>
                     <h3>Creación de Contenido</h3>
                     <p>Contenido audiovisual y narrativa digital</p>
                 </div>
-                <div class="service-card">
+                <div class="service-card scroll-animate">
+                    <i class="fas fa-lightbulb"></i>
                     <h3>Consultoría</h3>
                     <p>Asesoramiento en proyectos internacionales</p>
                 </div>
@@ -59,28 +62,28 @@
 
         <section id="newsletter" class="newsletter">
             <div class="section-header">
-                <h2>Newsletter</h2>
-                <p class="section-description">Suscríbete para recibir actualizaciones sobre mis proyectos, consejos y recursos.</p>
+                <h2 class="reveal-text">Newsletter</h2>
+                <p class="section-description reveal-text">Suscríbete para recibir actualizaciones sobre mis proyectos, consejos y recursos.</p>
             </div>
             <div class="newsletter-content">
                 <div class="newsletter-benefits">
-                    <div class="benefit-item">
+                    <div class="benefit-item scroll-animate">
                         <i class="fas fa-newspaper"></i>
                         <h3>Actualizaciones de Proyectos</h3>
                         <p>Sé el primero en conocer mis nuevos proyectos y colaboraciones.</p>
                     </div>
-                    <div class="benefit-item">
+                    <div class="benefit-item scroll-animate">
                         <i class="fas fa-lightbulb"></i>
                         <h3>Consejos y Recursos</h3>
                         <p>Recibe consejos prácticos y recursos sobre comunicación internacional.</p>
                     </div>
-                    <div class="benefit-item">
+                    <div class="benefit-item scroll-animate">
                         <i class="fas fa-star"></i>
                         <h3>Contenido Exclusivo</h3>
                         <p>Accede a contenido exclusivo y adelantos de futuros proyectos.</p>
                     </div>
                 </div>
-                <form class="newsletter-form" id="newsletter-form">
+                <form class="newsletter-form scroll-animate" id="newsletter-form">
                     <div class="form-group">
                         <input type="text" id="name" name="name" placeholder="Tu nombre" required>
                     </div>
@@ -106,10 +109,10 @@
 
         <section id="contact" class="contact">
             <div class="section-header">
-                <h2>Contacto</h2>
+                <h2 class="reveal-text">Contacto</h2>
             </div>
             <div class="contact-content">
-                <form class="contact-form">
+                <form class="contact-form scroll-animate">
                     <input type="text" placeholder="Nombre" required>
                     <input type="email" placeholder="Email" required>
                     <textarea placeholder="Mensaje" required></textarea>
@@ -120,11 +123,12 @@
     </main>
 
     <footer class="footer">
-        <p>&copy; 2024 Xabier Iribar. Todos los derechos reservados.</p>
+        <p class="reveal-text">&copy; 2024 Xabier Iribar. Todos los derechos reservados.</p>
     </footer>
 
     <script src="js/main.js"></script>
     <script src="js/translations.js"></script>
     <script src="js/newsletter.js"></script>
+    <script src="js/animations-advanced.js"></script>
 </body>
 </html> 
