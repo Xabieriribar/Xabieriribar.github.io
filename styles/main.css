@@ -735,4 +735,158 @@ section {
     .progress-story {
         padding: 1.5rem;
     }
+}
+
+/* Certifications Section */
+.certifications {
+    background-color: white;
+    padding: 8rem 2rem;
+}
+
+.certifications-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.certificate-card {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.certificate-card:hover {
+    transform: translateY(-5px);
+}
+
+.certificate-header {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    background: var(--light-gray);
+    align-items: center;
+}
+
+.certificate-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.certificate-title {
+    flex: 1;
+}
+
+.certificate-title h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.certificate-date {
+    color: var(--medium-gray);
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.certificate-score {
+    display: inline-flex;
+    align-items: baseline;
+    background: var(--accent-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+}
+
+.score-number {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.score-total {
+    font-size: 1rem;
+    opacity: 0.8;
+    margin-left: 2px;
+}
+
+.certificate-details {
+    padding: 2rem;
+}
+
+.skill-bars {
+    display: grid;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.skill-bar {
+    width: 100%;
+}
+
+.skill-label {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    color: var(--medium-gray);
+    font-size: 0.9rem;
+}
+
+.score {
+    color: var(--accent-color);
+    font-weight: 500;
+}
+
+.progress-bar {
+    height: 8px;
+    background: var(--light-gray);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background: var(--accent-color);
+    border-radius: 4px;
+    transition: width 1s ease;
+}
+
+.certificate-info {
+    background: var(--light-gray);
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-top: 2rem;
+}
+
+.certificate-info p {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--medium-gray);
+}
+
+.certificate-info strong {
+    color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+    .certificate-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .certificate-image {
+        width: 120px;
+        height: 120px;
+    }
+
+    .certificate-title h3 {
+        font-size: 1.5rem;
+    }
+
+    .certificate-details {
+        padding: 1.5rem;
+    }
 } 
