@@ -8,23 +8,35 @@
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body class="custom-cursor">
+<body>
+    <div class="cursor-dot"></div>
+    <div class="cursor-dot-outline"></div>
+
     <header class="header">
         <nav class="nav-container">
-            <div class="logo">XI</div>
-            <ul class="nav-links">
-                <li><a href="#home">Inicio</a></li>
-                <li><a href="about.html">Sobre mí</a></li>
-                <li><a href="#services">Servicios</a></li>
-                <li><a href="#newsletter">Newsletter</a></li>
-                <li><a href="#contact">Contacto</a></li>
-            </ul>
-            <div class="language-selector">
-                <button data-lang="es" class="active">ES</button>
-                <button data-lang="eu">EU</button>
-                <button data-lang="en">EN</button>
-                <button data-lang="de">DE</button>
-                <button data-lang="fr">FR</button>
+            <div class="logo">
+                <a href="#home">XI</a>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav-menu">
+                <ul class="menu-items">
+                    <li><a href="#home" class="active">Inicio</a></li>
+                    <li><a href="#about">Sobre mí</a></li>
+                    <li><a href="#experience">Experiencia</a></li>
+                    <li><a href="#projects">Proyectos</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+                <div class="language-selector">
+                    <button data-lang="es" class="active">ES</button>
+                    <button data-lang="eu">EU</button>
+                    <button data-lang="en">EN</button>
+                    <button data-lang="de">DE</button>
+                    <button data-lang="fr">FR</button>
+                </div>
             </div>
         </nav>
     </header>
@@ -33,102 +45,176 @@
         <section id="home" class="hero">
             <div class="hero-content">
                 <h1 class="reveal-text">Xabier Iribar</h1>
-                <p class="reveal-text">Comunicación Internacional & Creación de Contenido</p>
+                <div class="hero-subtitle reveal-text">
+                    <span class="highlight">Comunicación Internacional</span>
+                    <span class="separator">|</span>
+                    <span class="highlight">Creación de Contenido</span>
+                </div>
+                <p class="hero-description reveal-text">
+                    Especialista en comunicación multilingüe y creación de contenido digital,
+                    con experiencia internacional en Suiza, República Checa y España.
+                </p>
+                <div class="hero-cta">
+                    <a href="#contact" class="cta-button">Contactar</a>
+                    <a href="#about" class="cta-button outline">Conocer más</a>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span class="mouse">
+                    <span class="wheel"></span>
+                </span>
+                <p>Scroll para explorar</p>
             </div>
         </section>
 
-        <section id="services" class="services">
+        <section id="about" class="about">
             <div class="section-header">
-                <h2 class="reveal-text">Servicios</h2>
+                <span class="section-number">01</span>
+                <h2 class="reveal-text">Sobre mí</h2>
             </div>
-            <div class="services-grid">
-                <div class="service-card scroll-animate">
-                    <i class="fas fa-globe"></i>
-                    <h3>Comunicación Internacional</h3>
-                    <p>Estrategias multilingües y adaptación cultural</p>
-                </div>
-                <div class="service-card scroll-animate">
-                    <i class="fas fa-video"></i>
-                    <h3>Creación de Contenido</h3>
-                    <p>Contenido audiovisual y narrativa digital</p>
-                </div>
-                <div class="service-card scroll-animate">
-                    <i class="fas fa-lightbulb"></i>
-                    <h3>Consultoría</h3>
-                    <p>Asesoramiento en proyectos internacionales</p>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="reveal-text">
+                        Soy un profesional de la comunicación internacional con base en el País Vasco.
+                        Mi experiencia abarca desde la gestión de proyectos multilingües hasta la
+                        creación de contenido digital para audiencias internacionales.
+                    </p>
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h3>Idiomas</h3>
+                            <ul>
+                                <li>Euskera - Nativo</li>
+                                <li>Español - Nativo</li>
+                                <li>Inglés - C1</li>
+                                <li>Alemán - B2</li>
+                                <li>Francés - B1</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Especialidades</h3>
+                            <ul>
+                                <li>Comunicación Internacional</li>
+                                <li>Gestión de Proyectos</li>
+                                <li>Creación de Contenido</li>
+                                <li>Marketing Digital</li>
+                                <li>Relaciones Públicas</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="newsletter" class="newsletter">
+        <section id="experience" class="experience">
             <div class="section-header">
-                <h2 class="reveal-text">Newsletter</h2>
-                <p class="section-description reveal-text">Suscríbete para recibir actualizaciones sobre mis proyectos, consejos y recursos.</p>
+                <span class="section-number">02</span>
+                <h2 class="reveal-text">Experiencia</h2>
             </div>
-            <div class="newsletter-content">
-                <div class="newsletter-benefits">
-                    <div class="benefit-item scroll-animate">
-                        <i class="fas fa-newspaper"></i>
-                        <h3>Actualizaciones de Proyectos</h3>
-                        <p>Sé el primero en conocer mis nuevos proyectos y colaboraciones.</p>
-                    </div>
-                    <div class="benefit-item scroll-animate">
-                        <i class="fas fa-lightbulb"></i>
-                        <h3>Consejos y Recursos</h3>
-                        <p>Recibe consejos prácticos y recursos sobre comunicación internacional.</p>
-                    </div>
-                    <div class="benefit-item scroll-animate">
-                        <i class="fas fa-star"></i>
-                        <h3>Contenido Exclusivo</h3>
-                        <p>Accede a contenido exclusivo y adelantos de futuros proyectos.</p>
+            <div class="timeline">
+                <div class="timeline-item reveal-text">
+                    <div class="timeline-content">
+                        <span class="date">2023</span>
+                        <h3>Marché Cuendet</h3>
+                        <p>Bremblens, Suiza</p>
+                        <ul>
+                            <li>Gestión de comunicación multilingüe</li>
+                            <li>Desarrollo de contenido digital</li>
+                            <li>Coordinación de proyectos internacionales</li>
+                        </ul>
                     </div>
                 </div>
-                <form class="newsletter-form scroll-animate" id="newsletter-form">
-                    <div class="form-group">
-                        <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+                <div class="timeline-item reveal-text">
+                    <div class="timeline-content">
+                        <span class="date">2022</span>
+                        <h3>Universidad Mendel de Brno</h3>
+                        <p>Brno, República Checa</p>
+                        <ul>
+                            <li>Programa Erasmus+</li>
+                            <li>Investigación en comunicación internacional</li>
+                            <li>Desarrollo de proyectos multiculturales</li>
+                        </ul>
                     </div>
-                    <div class="form-group">
-                        <input type="email" id="email" name="email" placeholder="Tu email" required>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="section-header">
+                <span class="section-number">03</span>
+                <h2 class="reveal-text">Proyectos</h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card reveal-text">
+                    <div class="project-content">
+                        <h3>Comunicación Digital</h3>
+                        <p>Estrategias de contenido multilingüe y gestión de redes sociales internacionales.</p>
+                        <div class="project-tags">
+                            <span>Marketing Digital</span>
+                            <span>Contenido</span>
+                            <span>Social Media</span>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <select id="frequency" name="frequency" required>
-                            <option value="">Frecuencia de emails</option>
-                            <option value="weekly">Semanal</option>
-                            <option value="biweekly">Quincenal</option>
-                            <option value="monthly">Mensual</option>
-                        </select>
+                </div>
+                <div class="project-card reveal-text">
+                    <div class="project-content">
+                        <h3>Gestión Cultural</h3>
+                        <p>Coordinación de eventos culturales y proyectos de intercambio internacional.</p>
+                        <div class="project-tags">
+                            <span>Eventos</span>
+                            <span>Cultura</span>
+                            <span>Internacional</span>
+                        </div>
                     </div>
-                    <div class="form-group checkbox-group">
-                        <input type="checkbox" id="privacy" name="privacy" required>
-                        <label for="privacy">Acepto la política de privacidad y recibir comunicaciones por email</label>
-                    </div>
-                    <button type="submit" class="subscribe-button">Suscribirse</button>
-                </form>
+                </div>
             </div>
         </section>
 
         <section id="contact" class="contact">
             <div class="section-header">
+                <span class="section-number">04</span>
                 <h2 class="reveal-text">Contacto</h2>
             </div>
             <div class="contact-content">
-                <form class="contact-form scroll-animate">
-                    <input type="text" placeholder="Nombre" required>
-                    <input type="email" placeholder="Email" required>
-                    <textarea placeholder="Mensaje" required></textarea>
-                    <button type="submit">Enviar</button>
+                <div class="contact-text reveal-text">
+                    <p>¿Tienes un proyecto en mente? ¿Quieres colaborar?</p>
+                    <p>Estoy siempre interesado en nuevos proyectos y oportunidades de colaboración.</p>
+                </div>
+                <form class="contact-form reveal-text">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required>
+                        <label for="name">Nombre</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" required></textarea>
+                        <label for="message">Mensaje</label>
+                    </div>
+                    <button type="submit" class="submit-button">Enviar mensaje</button>
                 </form>
             </div>
         </section>
     </main>
 
     <footer class="footer">
-        <p class="reveal-text">&copy; 2024 Xabier Iribar. Todos los derechos reservados.</p>
+        <div class="footer-content">
+            <div class="footer-left">
+                <p>&copy; 2024 Xabier Iribar</p>
+            </div>
+            <div class="footer-right">
+                <div class="social-links">
+                    <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <script src="js/main.js"></script>
-    <script src="js/translations.js"></script>
-    <script src="js/newsletter.js"></script>
     <script src="js/animations-advanced.js"></script>
+    <script src="js/translations.js"></script>
 </body>
-</html> 
+</html>
