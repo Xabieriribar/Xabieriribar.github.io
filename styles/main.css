@@ -228,6 +228,7 @@ section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
+    align-items: center;
 }
 
 .about-text p {
@@ -554,6 +555,15 @@ section {
     section {
         padding: 4rem 1rem;
     }
+
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+
+    .about-image {
+        margin-top: 2rem;
+        order: -1;
+    }
 }
 
 /* Animaciones */
@@ -577,4 +587,46 @@ section {
 .scroll-animate.visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+/* About Image Styles */
+.about-image {
+    position: relative;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.profile-image {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.profile-image:hover {
+    transform: translateY(-5px);
+}
+
+.image-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    backdrop-filter: blur(5px);
+}
+
+.image-caption p {
+    margin: 0;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.image-caption .location {
+    font-size: 0.9rem;
+    color: var(--accent-color);
 } 
