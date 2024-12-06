@@ -3,188 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre mí | Xabier Iribar</title>
+    <title>Sobre Mí | Xabier Iribar</title>
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/about.css?v=1.1">
+    <link rel="stylesheet" href="styles/about.css">
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body class="about-page">
-    <div class="cursor"></div>
-    <div class="cursor-follower"></div>
-
+<body>
     <header class="header">
         <nav class="nav-container">
-            <a href="index.html" class="logo">XI</a>
-            <ul class="nav-links">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="about.html" class="active">Sobre mí</a></li>
-                <li><a href="index.html#services">Servicios</a></li>
-                <li><a href="index.html#contact">Contacto</a></li>
-            </ul>
-            <div class="language-selector">
-                <button data-lang="es" class="active">ES</button>
-                <button data-lang="eu">EU</button>
-                <button data-lang="en">EN</button>
-                <button data-lang="de">DE</button>
-                <button data-lang="fr">FR</button>
+            <div class="logo">
+                <a href="index.html">XI</a>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav-menu">
+                <ul class="menu-items">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#about" class="active">Sobre mí</a></li>
+                    <li><a href="#timeline">Mi Historia</a></li>
+                    <li><a href="index.html#certifications">Certificaciones</a></li>
+                    <li><a href="index.html#contact">Contacto</a></li>
+                </ul>
+                <div class="language-selector">
+                    <button data-lang="es" class="active">ES</button>
+                    <button data-lang="eu">EU</button>
+                    <button data-lang="en">EN</button>
+                    <button data-lang="de">DE</button>
+                    <button data-lang="fr">FR</button>
+                </div>
             </div>
         </nav>
     </header>
 
-    <main class="about-main">
-        <section class="about-hero">
-            <div class="floating-swiss">
-                <img src="assets/swiss-flag.svg" alt="Bandera Suiza" class="flag-icon">
-            </div>
-            <div class="floating-basque">
-                <img src="assets/basque-flag.svg" alt="Bandera Vasca" class="flag-icon">
-            </div>
+    <main>
+        <section id="about" class="about-hero">
             <div class="about-hero-content">
-                <span class="section-number">01</span>
-                <h1>Sobre mí</h1>
+                <h1 class="reveal-text">Mi Historia</h1>
+                <p class="reveal-text">Un viaje a través de la comunicación internacional y el aprendizaje multicultural</p>
             </div>
         </section>
 
-        <section class="about-content">
-            <div class="about-grid">
-                <div class="about-text">
-                    <p class="intro-text">Geógrafo de formación, comunicador por pasión y eterno aprendiz autodidacta. Mi misión es inspirar a otros a descubrir su potencial para aprender y crecer.</p>
-                    
-                    <div class="stats-container">
-                        <div class="stat-item">
-                            <span class="stat-number">5</span>
-                            <span class="stat-label">Idiomas</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">B2→C1</span>
-                            <span class="stat-label">En 1 año</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">2</span>
-                            <span class="stat-label">Países</span>
-                        </div>
-                    </div>
-
-                    <div class="timeline">
-                        <h2>Mi Historia Personal</h2>
-                        <div class="timeline-item fade-in" data-year="2014">
-                            <span class="timeline-date">2014</span>
-                            <h3 class="timeline-title">Los Inicios que Forjaron mi Carácter</h3>
-                            <p class="timeline-description">Al entrar al instituto, enfrenté situaciones difíciles que me llevaron a buscar conocimiento de forma independiente. Me sumergí en documentales, especialmente sobre la Segunda Guerra Mundial en Color, lo que me ayudó a desarrollar una forma autodidacta de aprendizaje. Esta experiencia formó mi carácter resiliente y mi capacidad para afrontar retos de forma independiente.</p>
-                        </div>
-                        <div class="timeline-item fade-in" data-year="2017">
-                            <span class="timeline-date">2017</span>
-                            <h3 class="timeline-title">Descubrimiento y Pasión por el Conocimiento</h3>
-                            <p class="timeline-description">En cuarto de la ESO, a los 16 años, desarrollé una intensa pasión por la lectura, estudiando diariamente la historia del mundo a través de mapas. Mi interés por la ciencia creció al descubrir los libros de Carl Sagan. Construí mi primer ordenador desde cero, marcando el inicio de mi fascinación por la tecnología.</p>
-                        </div>
-                        <div class="timeline-item fade-in" data-year="2020">
-                            <span class="timeline-date">2020</span>
-                            <h3 class="timeline-title">Transformación Durante la Pandemia</h3>
-                            <p class="timeline-description">El inicio de la pandemia me llevó a desarrollar una rutina constante de ejercicio físico en casa. La universidad marcó un antes y un después en mi vida social, aprendiendo la valiosa lección de la importancia de los contactos. Mis capacidades autodidactas se desarrollaron exponencialmente.</p>
-                        </div>
-                        <div class="timeline-item fade-in" data-year="2020-2023">
-                            <span class="timeline-date">2020 - 2023</span>
-                            <h3 class="timeline-title">Etapa Universitaria y Autodisciplina</h3>
-                            <p class="timeline-description">Desarrollé una fuerte ética de trabajo y disciplina, manteniendo una rutina de ejercicio 6 días a la semana y estudio diario. Destaqué en asignaturas como Estadística, donde obtuve un 9 estudiando de forma autodidacta. En verano de 2020, conseguí la certificación B2 en inglés, partiendo de un nivel básico.</p>
-                        </div>
-                        <div class="timeline-item fade-in" data-year="2023">
-                            <span class="timeline-date">2023</span>
-                            <h3 class="timeline-title">Erasmus y Crecimiento Personal</h3>
-                            <p class="timeline-description">Mi experiencia Erasmus en República Checa marcó un punto de inflexión en mi vida. Mis habilidades sociales y mi confianza experimentaron un crecimiento exponencial. Comencé a estudiar francés de forma autodidacta por puro placer. En diciembre, tomé la decisión de mudarme a Suiza para comenzar una nueva vida e independizarme.</p>
-                        </div>
-                        <div class="timeline-item fade-in" data-year="2024">
-                            <span class="timeline-date">2024 - Presente</span>
-                            <h3 class="timeline-title">Nueva Vida en Suiza</h3>
-                            <p class="timeline-description">Trabajando en Aclens como lavaplatos y desarrollando mi proyecto personal en redes sociales. Obtuve un 9 en el TFG sobre la Guerra de los Chips entre Estados Unidos y China, y conseguí el DELF B2 en francés con un 9/10. Experiencia como voluntario en Marché Cuendet, una granja de producción sin químicos.</p>
+        <section id="timeline" class="timeline-section">
+            <div class="timeline-container">
+                <div class="timeline-item reveal-text">
+                    <div class="timeline-date">2023</div>
+                    <div class="timeline-content">
+                        <h3>Marché Cuendet, Suiza</h3>
+                        <p>Experiencia internacional en Bremblens, Cantón de Vaud. Trabajo en una granja de producción sin químicos, mejorando mis habilidades en francés y alemán.</p>
+                        <div class="timeline-image">
+                            <img src="images/EMIGRANTE.jpg" alt="Experiencia en Suiza">
                         </div>
                     </div>
                 </div>
 
-                <div class="about-image">
-                    <img src="assets/xabier-profile.png" alt="Xabier Iribar en Suiza" class="profile-image">
-                </div>
-            </div>
-
-            <div class="philosophy-section">
-                <h2>Mi Filosofía</h2>
-                <div class="philosophy-grid">
-                    <div class="philosophy-item">
-                        <i class="fas fa-brain"></i>
-                        <h3>Aprendizaje Autodidacta</h3>
-                        <p>Creo en el poder del aprendizaje autodirigido y en la capacidad de cada persona para desarrollar nuevas habilidades.</p>
-                    </div>
-                    <div class="philosophy-item">
-                        <i class="fas fa-dumbbell"></i>
-                        <h3>Disciplina sobre Motivación</h3>
-                        <p>La disciplina constante supera a la motivación temporal. Es la clave del éxito en cualquier objetivo.</p>
-                    </div>
-                    <div class="philosophy-item">
-                        <i class="fas fa-share-nodes"></i>
-                        <h3>Compartir Conocimiento</h3>
-                        <p>Mi pasión es ayudar a otros a descubrir cómo aprender a aprender, compartiendo métodos y experiencias.</p>
+                <div class="timeline-item reveal-text">
+                    <div class="timeline-date">2022</div>
+                    <div class="timeline-content">
+                        <h3>Erasmus en Brno</h3>
+                        <p>Universidad Mendel de Brno, República Checa. Una experiencia transformadora que expandió mis horizontes culturales y académicos.</p>
                     </div>
                 </div>
-            </div>
 
-            <div class="content-creation">
-                <h2>Creación de Contenido</h2>
-                <p class="content-intro">Documento mi día a día y experiencias de aprendizaje para inspirar a otros en su propio viaje de desarrollo personal.</p>
-                <div class="content-grid">
-                    <div class="content-type">
-                        <i class="fas fa-video"></i>
-                        <h3>Contenido Audiovisual</h3>
-                        <p>Historias auténticas sobre vida, aprendizaje y adaptación cultural</p>
-                    </div>
-                    <div class="content-type">
-                        <i class="fas fa-language"></i>
-                        <h3>Aprendizaje de Idiomas</h3>
-                        <p>Métodos y experiencias en el dominio de nuevas lenguas</p>
-                    </div>
-                    <div class="content-type">
-                        <i class="fas fa-compass"></i>
-                        <h3>Experiencias Culturales</h3>
-                        <p>Navegando entre culturas y territorios diversos</p>
+                <div class="timeline-item reveal-text">
+                    <div class="timeline-date">2020-2024</div>
+                    <div class="timeline-content">
+                        <h3>Grado en Geografía</h3>
+                        <p>Facultad de Letras, UPV/EHU. Desarrollo de una sólida base académica y pasión por el análisis territorial.</p>
                     </div>
                 </div>
-            </div>
 
-            <div class="languages-section">
-                <h2>Competencias Lingüísticas</h2>
-                <div class="language-grid">
-                    <div class="language-item">
-                        <span class="language-name">Euskara</span>
-                        <span class="language-level">Nativo</span>
-                        <div class="language-progress">
-                            <div class="progress-bar" style="--progress: 1"></div>
+                <div class="timeline-item reveal-text">
+                    <div class="timeline-date">2024</div>
+                    <div class="timeline-content">
+                        <h3>Certificación DELF B2</h3>
+                        <p>Obtención del certificado DELF B2 en francés con una puntuación de 87.5/100, demostrando un alto nivel de competencia en el idioma.</p>
+                        <div class="achievement">
+                            <span class="score">87.5/100</span>
+                            <span class="detail">Alliance française de Vitoria</span>
                         </div>
                     </div>
-                    <div class="language-item">
-                        <span class="language-name">Español</span>
-                        <span class="language-level">Nativo</span>
-                        <div class="language-progress">
-                            <div class="progress-bar" style="--progress: 1"></div>
-                        </div>
-                    </div>
-                    <div class="language-item">
-                        <span class="language-name">English</span>
-                        <span class="language-level">C1</span>
-                        <div class="language-progress">
-                            <div class="progress-bar" style="--progress: 0.95"></div>
-                        </div>
-                    </div>
-                    <div class="language-item">
-                        <span class="language-name">Français</span>
-                        <span class="language-level">B2</span>
-                        <div class="language-progress">
-                            <div class="progress-bar" style="--progress: 0.8"></div>
-                        </div>
-                    </div>
-                    <div class="language-item">
-                        <span class="language-name">Deutsch</span>
-                        <span class="language-level">Básico</span>
-                        <div class="language-progress">
-                            <div class="progress-bar" style="--progress: 0.2"></div>
+                </div>
+
+                <div class="timeline-item reveal-text">
+                    <div class="timeline-date">2022</div>
+                    <div class="timeline-content">
+                        <h3>Cambridge Advanced (C1)</h3>
+                        <p>Certificación de nivel C1 en inglés, alcanzando una puntuación de 190/210, evidenciando excelentes habilidades en el idioma.</p>
+                        <div class="achievement">
+                            <span class="score">190/210</span>
+                            <span class="detail">Cambridge Assessment English</span>
                         </div>
                     </div>
                 </div>
@@ -193,54 +104,21 @@
     </main>
 
     <footer class="footer">
-        <p>&copy; 2024 Xabier Iribar. Todos los derechos reservados.</p>
+        <div class="footer-content">
+            <div class="footer-left">
+                <p>&copy; 2024 Xabier Iribar</p>
+            </div>
+            <div class="footer-right">
+                <div class="social-links">
+                    <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <script src="js/main.js"></script>
-    <script src="js/translations.js"></script>
-    <script>
-        // Custom cursor
-        const cursor = document.querySelector('.cursor');
-        const cursorFollower = document.querySelector('.cursor-follower');
-
-        document.addEventListener('mousemove', (e) => {
-            cursor.style.left = e.clientX + 'px';
-            cursor.style.top = e.clientY + 'px';
-            
-            cursorFollower.style.left = e.clientX + 'px';
-            cursorFollower.style.top = e.clientY + 'px';
-        });
-
-        // Timeline animations
-        document.addEventListener('DOMContentLoaded', function() {
-            const timelineItems = document.querySelectorAll('.timeline-item');
-            
-            // Función para verificar si un elemento está en el viewport
-            function isElementInViewport(el) {
-                const rect = el.getBoundingClientRect();
-                return (
-                    rect.top >= 0 &&
-                    rect.left >= 0 &&
-                    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-                    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-                );
-            }
-
-            // Función para animar elementos visibles
-            function animateVisibleItems() {
-                timelineItems.forEach(item => {
-                    if (isElementInViewport(item)) {
-                        item.classList.add('fade-in');
-                    }
-                });
-            }
-
-            // Iniciar animaciones
-            animateVisibleItems();
-
-            // Animar al hacer scroll
-            window.addEventListener('scroll', animateVisibleItems);
-        });
-    </script>
+    <script src="js/animations-advanced.js"></script>
 </body>
 </html> 
