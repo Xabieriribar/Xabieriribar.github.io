@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>OpenAI Image Generator</title>
+</head>
+<body>
+    <h1>OpenAI Image Generator</h1>
+    <form id="prompt-form">
+        <input type="text" name="prompt" id="prompt" style="width:60%" value="{{ default_prompt }}">
+        <button type="submit">Generate</button>
+    </form>
+    <p><img id="result" style="max-width:512px"></p>
+    <script>
+    document.getElementById('prompt-form').addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const formData = new FormData(e.target);
+        const resp = await fetch('/generate', { method: 'POST', body: formData });
+        if (resp.ok) {
+            const data = await resp.json();
+            document.getElementById('result').src = data.url;
+        }
+    });
+    </script>
+</body>
+</html>
